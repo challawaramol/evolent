@@ -1,0 +1,5 @@
+name: Evolent Contact
+type: module
+description: This  module dispaly information of Contact person.
+core: 8.x
+package: Custom

@@ -1,0 +1,27 @@
+evolent.evolent_form:
+  path: '/evolent/contact/form'
+  defaults:
+    _form: '\Drupal\evolent\Form\EvolentForm'
+    _title: 'Contact Form'
+  requirements:
+    _access: 'TRUE'
+  
+
+evolent.display_table_controller_display:
+  path: '/evolent/contact/table'
+  defaults:
+    _controller: '\Drupal\evolent\Controller\DisplayTableController::display'
+    _title: 'Contact Person list'
+  requirements:
+    _permission: 'access content'
+
+
+
+evolent.delete_form:
+  path: '/evolent/form/delete/{cid}'
+  defaults:
+    _form: '\Drupal\evolent\Form\DeleteForm'
+    _title: 'Delete contact Form'
+  requirements:
+    _access: 'TRUE'
+  
